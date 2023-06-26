@@ -27,20 +27,30 @@ overflow: visible!important;
 }
 .portfolio img{
     width: 45rem;
-    height: 428px;
+    height:500px;
     filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
     border-radius: 19px;
 }
+.portfolio a{
+   position: relative;
+   top: -10%;
+}
+.mbl-portfolio-slider{
+   display: none;
+}
 @media (max-width:700px) {
-    .portfolio .swiper{
-        display: flex;
-        flex-direction: column;
-        }
-    .portfolio img{
+    .portfolio-slider{
+      display: none;
+    }
+    .mbl-portfolio-slider{
+        display: block;
+        margin-top: 3rem;
         width: 100%;
-        min-width: 600px;
-        height: 400px;
+    }
+    .portfolio img{
+        width: 500px;
+        height: 300px;
         filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
         border-radius: 19px;
-    }  
+    }
 }

@@ -32,7 +32,7 @@ const Intro = () => {
                 <Link spy = {true} to='Contact' smooth={true}>Hire me</Link>
                 </button>
                 <div className="i-icons">
-                    <img src={Github} alt="" />
+                     <img src={Github} alt="" />
                     <img src={LinkedIn} alt="" />
                     <img src={Instagram} alt="" />
                 </div>

@@ -23,15 +23,42 @@ const Portfolio = () => {
       >
       <SwiperSlide>
        <img src={photography} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={jungle} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={onlineshop} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={dreamjob} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
+      </SwiperSlide>
+      </Swiper>
+      <Swiper 
+       spaceBetween={2}
+      slidesPerView = {1}
+      grabCursor = {true}
+      className = 'mbl-portfolio-slider'
+      >
+      <SwiperSlide>
+       <img src={photography} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
+      </SwiperSlide>
+      <SwiperSlide>
+       <img src={jungle} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
+      </SwiperSlide>
+      <SwiperSlide>
+       <img src={onlineshop} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
+      </SwiperSlide>
+      <SwiperSlide>
+       <img src={dreamjob} alt="" />
+       <a href=""><button  className='button'>view live site</button></a>
       </SwiperSlide>
       </Swiper>
     </div>
