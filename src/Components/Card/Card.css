@@ -1,0 +1,46 @@
+.card{
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(254, 144, 76, 0.117);
+    border: 7px solid var(--orange);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+}
+.card span:nth-of-type(2){
+    color: var(--gray);
+    font-size: 16px;
+    
+}
+.card > img{
+    transform: scale(0.6);
+    margin-bottom: -2rem;
+}
+.c-button{
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.807);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290fd;
+}
+.s-blur1{
+top: 7rem;
+left: 49rem;
+}
+.s-blur2{
+    top: 21rem;
+    left: -21rem;
+    }
+@media (max-width: 1250px) {
+.card{
+    width: fixed;
+}
+    }
