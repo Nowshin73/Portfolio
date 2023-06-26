@@ -1,10 +1,10 @@
 import React from 'react'
 import './Portfolio.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import sidebar from '../../img/sidebar.png'
-import ecommerce from '../../img/ecommerce.png'
-import hoc from '../../img/hoc.png'
-import musicapp from '../../img/musicapp.png'
+import photography from '../../img/photography.png'
+import jungle from '../../img/jungle book.png'
+import dreamjob from '../../img/dreamjob.png'
+import onlineshop from '../../img/onlineshop.png'
 import 'swiper/css'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
@@ -17,21 +17,21 @@ const Portfolio = () => {
       <span>Portfolio</span>
       <Swiper 
        spaceBetween={2}
-      slidesPerView = {3}
+      slidesPerView = {1.5}
       grabCursor = {true}
       className = 'portfolio-slider'
       >
       <SwiperSlide>
-       <img src={sidebar} alt="" />
+       <img src={photography} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-       <img src={ecommerce} alt="" />
+       <img src={jungle} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-       <img src={musicapp} alt="" />
+       <img src={onlineshop} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-       <img src={hoc} alt="" />
+       <img src={dreamjob} alt="" />
       </SwiperSlide>
       </Swiper>
     </div>

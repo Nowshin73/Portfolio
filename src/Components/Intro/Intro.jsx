@@ -7,7 +7,7 @@ import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import boy from '../../img/boy.png'
+import nowshin from '../../img/nowshin2.png'
 import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png'
@@ -25,8 +25,7 @@ const Intro = () => {
                 <div className="i-name" >
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am </span>
                     <span>Nowshin Nawar </span>
-                    <span style={{ color: darkMode ? 'white' : '' }}>Frontend Developer with high level
-                        of experience in web designing and development,
+                    <span style={{ color: darkMode ? 'white' : '' }}>Web Developer
                         producing the Quality work</span>
                 </div>
                 <button className="button i-button">
@@ -41,7 +40,7 @@ const Intro = () => {
             <div className="i-right">
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
-                <img src={boy} alt="" />
+                <img src={nowshin} alt="" />
                 <motion.img
                     initial={{ left: "-36%" }}
                     whileInView={{ left: "-24%" }}
@@ -55,7 +54,7 @@ const Intro = () => {
                     transition={transition}
                     style={{ top: '-4%', left: '55%' }}
                     className='floating-div'>
-                    <Floating image={crown} txt1='Web' txt2='Developer' />
+                    <Floating image={crown} txt1='PHP' txt2='Developer' />
                 </motion.div>
                 <motion.div
                     initial={{ top: "70%", left: "-36%" }}
@@ -63,7 +62,7 @@ const Intro = () => {
                     transition={transition}
                     className='floating-div'
                     style={{ top: '18.3rem', left: '2rem' }}>
-                    <Floating image={thumbup} txt1='Best Design' txt2='Award' />
+                    <Floating image={thumbup} txt1='Mern Stack' txt2='developer' />
                 </motion.div>
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}>
                 </div>

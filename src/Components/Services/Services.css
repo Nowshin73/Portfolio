@@ -27,7 +27,7 @@ font-weight: bold;
     margin-top: 1rem;
 }
 .s-button{
-width: 8rem;
+width: max-content;
 height: 2rem;
 margin-top: 1rem;
 }

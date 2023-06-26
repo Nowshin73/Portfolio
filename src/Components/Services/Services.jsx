@@ -15,13 +15,12 @@ const Services = () => {
     <div className="services" id='Services'>
       <div className="awesome">
         <span  style={{color: darkMode? 'white': ''}}>My Awesome</span>
-        <span>services</span>
-        <span  style={{color: darkMode? 'white': ''}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias dolor cum,
-          <br />
-          repellat magni similique odit earum rem accusamus reprehenderit?
+        <span>Skills</span>
+        <span  style={{color: darkMode? 'white': ''}}>
+          
         </span>
 
-        <button className="button s-button">Download CV</button>
+        <button className="button s-button">Download Resume</button>
         <div className="blur s-blur1" style={{ background: 'rgb(213, 172, 238)' }}>
         </div>
       </div>
