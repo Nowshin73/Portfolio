@@ -14,7 +14,8 @@ import glassesimoji from '../../img/glassesimoji.png'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
+import { TypeAnimation } from 'react-type-animation';
 const Intro = () => {
     const transition = { duration: 2, type: 'spring' };
     const theme = useContext(themeContext);
@@ -24,17 +25,32 @@ const Intro = () => {
             <div className="i-left">
                 <div className="i-name" >
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am </span>
-                    <span>Nowshin Nawar </span>
+                    <span> <TypeAnimation
+                        preRenderFirstString={true}
+                        sequence={[
+                            500,
+                            'Nowshin Nawar', // initially rendered starting point
+                            1000,
+                            'a Web Developer',
+                            1000,
+                            'a Mern Stack Developer',
+                            1000,
+                            'a PHP Developer',
+                            500,
+                        ]}
+                        speed={50}
+                        style={{ fontSize: '3rem', color:'#FCA61F', fontWeight:' bold' }}
+                        repeat={Infinity}
+                    /></span>
                     <span style={{ color: darkMode ? 'white' : '' }}>Web Developer
                         producing the Quality work</span>
                 </div>
                 <button className="button i-button">
-                <Link spy = {true} to='Contact' smooth={true}>Hire me</Link>
+                    <Link spy={true} to='Contact' smooth={true}>Hire me</Link>
                 </button>
                 <div className="i-icons">
-                     <img src={Github} alt="" />
-                    <img src={LinkedIn} alt="" />
-                    <img src={Instagram} alt="" />
+                   <a href="https://github.com/Nowshin73"> <img src={Github} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/nowshin-nawar-nibal"><img src={LinkedIn} alt="" /></a>
                 </div>
             </div>
             <div className="i-right">

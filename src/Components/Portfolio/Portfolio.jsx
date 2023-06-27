@@ -23,19 +23,19 @@ const Portfolio = () => {
       >
       <SwiperSlide>
        <img src={photography} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://photography-institute.web.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={jungle} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://jungle-book-ea84b.web.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={onlineshop} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://nowshinzonlinestore.000webhostapp.com/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={dreamjob} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://effulgent-pixie-4cc819.netlify.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       </Swiper>
       <Swiper 
@@ -44,21 +44,21 @@ const Portfolio = () => {
       grabCursor = {true}
       className = 'mbl-portfolio-slider'
       >
-      <SwiperSlide>
+       <SwiperSlide>
        <img src={photography} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://photography-institute.web.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={jungle} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://jungle-book-ea84b.web.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={onlineshop} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://nowshinzonlinestore.000webhostapp.com/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       <SwiperSlide>
        <img src={dreamjob} alt="" />
-       <a href=""><button  className='button'>view live site</button></a>
+       <a href="https://effulgent-pixie-4cc819.netlify.app/" target='_blank'><button  className='button'>view live site</button></a>
       </SwiperSlide>
       </Swiper>
     </div>

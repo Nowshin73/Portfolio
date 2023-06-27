@@ -19,7 +19,7 @@ flex-direction: column;
     font-weight: bold;
     font-size: 3rem;
 }
-.i-name>:nth-child(2){
+.title{
     color: var(--orange);
     font-weight: bold;
     font-size: 3rem;
@@ -43,7 +43,7 @@ flex-direction: column;
 }
 .i-button{
     width: 6rem;
-    height: 2rem;
+    height: max-content;
     }
 .i-right{
 flex: 1;
@@ -81,7 +81,7 @@ top: -9%;
     height: 10rem;
     border-radius: 50%;
     
-    z-index: -9;
+    z-index: auto;
     top: -22%;
     left: 55%;
     filter: blur(72px);
