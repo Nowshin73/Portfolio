@@ -3,7 +3,9 @@
     align-items: center;
     margin: -0.5rem -3.5rem;
     position: relative;
-    margin-top: -7rem;
+    margin-top: -5rem;
+    background: linear-gradient(180deg, #FE2EF7 26.71%, #BF00FF 99.36% );
+    height: 600px;
 }
 .f-content{
     position: absolute;

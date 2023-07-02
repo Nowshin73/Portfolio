@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { themeContext } from '../../Context'
 
 
-const Card = ({ emoji, heading, detail }) => {
+const Card = ({id, emoji, heading, detail, list }) => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -15,20 +15,25 @@ const Card = ({ emoji, heading, detail }) => {
         <img src={emoji} alt="" />
         <span style={{ color: darkMode ? 'var(--orange)' : '' }}>{heading}</span>
         <span style={{ color: darkMode ? 'white' : '' }}>{detail} </span>
-        <button class=" button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Learn more</button>
+        <button className=" button" data-bs-target={`#${id}`} data-bs-toggle="modal">Learn more</button>
       </div>
-      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div className="modal fade" id={id} aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalToggleLabel">{heading}</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              Show a second modal and hide this one with the button below.
+            <div className="modal-body">
+             <h3>The things I can do</h3>
+             <ol>
+            {list.map((item,index)=>
+            <li key={index}>{item}</li>
+            )}
+             </ol>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div className="modal-footer">
+            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

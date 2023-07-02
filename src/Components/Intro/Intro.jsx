@@ -1,5 +1,7 @@
 import React from 'react'
 import './Intro.css'
+import {BsGithub} from "react-icons/bs"
+import {SiLinkedin} from "react-icons/si"
 import '../../Components/FloatingDiv/Floating.css'
 import Floating from "../../Components/FloatingDiv/Floating";
 import Github from '../../img/github.png'
@@ -10,7 +12,7 @@ import Vector2 from '../../img/Vector2.png'
 import nowshin from '../../img/nowshin2.png'
 import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
-import glassesimoji from '../../img/glassesimoji.png'
+import glassesimoji from '../../img/react-logo.png'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
@@ -25,7 +27,7 @@ const Intro = () => {
             <div className="i-left">
                 <div className="i-name" >
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am </span>
-                    <span> <TypeAnimation
+                    <span className='title'> <TypeAnimation
                         preRenderFirstString={true}
                         sequence={[
                             500,
@@ -39,7 +41,7 @@ const Intro = () => {
                             500,
                         ]}
                         speed={50}
-                        style={{ fontSize: '3rem', color:'#FCA61F', fontWeight:' bold' }}
+                        style={{ fontSize: '3rem', color:'#FE2EF7', fontWeight:' bold' }}
                         repeat={Infinity}
                     /></span>
                     <span style={{ color: darkMode ? 'white' : '' }}>Web Developer
@@ -48,9 +50,9 @@ const Intro = () => {
                 <button className="button i-button">
                     <Link spy={true} to='Contact' smooth={true}>Hire me</Link>
                 </button>
-                <div className="i-icons">
-                   <a href="https://github.com/Nowshin73"> <img src={Github} alt="" /></a>
-                    <a href="https://www.linkedin.com/in/nowshin-nawar-nibal"><img src={LinkedIn} alt="" /></a>
+                <div className="i-icons" >
+                   <a href="https://github.com/Nowshin73"><BsGithub style={{fontSize: "4rem", color:"#BF00FF"}}></BsGithub></a>
+                    <a href="https://www.linkedin.com/in/nowshin-nawar-nibal" download><SiLinkedin style={{fontSize: "4rem", color:"#BF00FF"}}></SiLinkedin></a>
                 </div>
             </div>
             <div className="i-right">
@@ -62,6 +64,7 @@ const Intro = () => {
                     whileInView={{ left: "-24%" }}
                     transition={transition}
                     src={glassesimoji}
+                    width={"250px"}
                     alt=""
                     id='f-1' />
                 <motion.div

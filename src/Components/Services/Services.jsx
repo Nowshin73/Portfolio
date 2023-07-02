@@ -11,6 +11,9 @@ const Services = () => {
   const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+ const list1 = ['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ];
+ const list2 = [];
+ const list3 = ['Passing props','Creating Mobile Responsive Components','Using different React hooks for ex:- useState, useEffect, useContext'];
   return (
     <div className="services" id='Services'>
       <div className="awesome">
@@ -32,9 +35,11 @@ const Services = () => {
           transition={transition}
           style={{ left: '2rem' }}>
           <Card
+          id={"modal1"}
             emoji={glasses}
-            heading={'Frontend Developer'}
-            detail={'Html, CSS, Javascript, React '}
+            heading={'Javascript Developer'}
+            detail={'Javascript, ES6, REST API'}
+            list={list1}
           />
         </motion.div>
         
@@ -44,9 +49,11 @@ const Services = () => {
           transition={transition}
           style={{ left: '13rem', top: '19rem' }}>
           <Card
+          id={"modal2"}
             emoji={humble}
             heading={'Backend Developer'}
             detail={'Node, Express, Mongodb, PHP '}
+            list={list2}
           />
         </motion.div>
         <motion.div
@@ -55,9 +62,11 @@ const Services = () => {
           transition={transition}
           style={{ left: '23rem' }}>
           <Card
+          id={"modal3"}
             emoji={heartemoji}
-            heading={'Design'}
-            detail={'Pencil, Adobe Illustrator, Photoshop'}
+            heading={'React Developer'}
+            detail={'React Js'}
+            list={list3}
           />
         </motion.div>
         <div className="blur s-blur2" style={{ background: '#52fde9bc' }}>
