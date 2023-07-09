@@ -12,7 +12,7 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_jwlu45t', 'template_6m1r0dd', form.current, '15OvKb55Pk-OVpDlx').then((result) => {
+    emailjs.sendForm('service_dirm55q', 'template_6m1r0dd', form.current, '8_84KpcT0GlXaAyc4').then((result) => {
       console.log(result.text);
       setDone(true)
     }, (error) => {

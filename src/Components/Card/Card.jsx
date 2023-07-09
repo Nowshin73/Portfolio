@@ -10,7 +10,6 @@ const Card = ({id, emoji, heading, detail, list }) => {
 
   return (
     <>
-
       <div className="card">
         <img src={emoji} alt="" />
         <span style={{ color: darkMode ? 'var(--orange)' : '' }}>{heading}</span>

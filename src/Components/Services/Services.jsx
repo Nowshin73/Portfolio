@@ -7,10 +7,25 @@ import humble from '../../img/humble.png'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
+import { BsDownload } from 'react-icons/bs'
 const Services = () => {
   const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const skilldata = [
+    {
+      id:1,
+      name:"React Js"
+    },
+    {
+      id:2,
+      name:"JavaScript & ES6"
+    },
+    {
+      id:3,
+      name:"MongoDB"
+    },
+  ]
  const list1 = ['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ];
  const list2 = [];
  const list3 = ['Passing props','Creating Mobile Responsive Components','Using different React hooks for ex:- useState, useEffect, useContext'];
@@ -23,12 +38,14 @@ const Services = () => {
           
         </span>
 
-        <a href="https://drive.google.com/file/d/13TqvfPxUORZlLcFY8Xfg2A2IukxvwYr2/view?usp=sharing" target="_blank"> <button className="button s-button">View Resume</button></a>
+        <a href="resume.pdf"download> <button className="button s-button">Download Resume <BsDownload></BsDownload> </button></a>
         <div className="blur s-blur1" style={{ background: 'rgb(213, 172, 238)' }}>
         </div>
       </div>
+        <div className="skils">
 
-      <div className="cards">
+        </div>
+      {/* <div className="cards">
         <motion.div
            whileInView ={{left: "5rem"}}
            initial ={{left: "0rem"}}
@@ -73,7 +90,7 @@ const Services = () => {
 
         </div>
 
-      </div>
+      </div> */}
     </div>
   )
 }
