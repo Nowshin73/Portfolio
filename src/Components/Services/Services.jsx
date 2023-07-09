@@ -15,20 +15,27 @@ const Services = () => {
   const skilldata = [
     {
       id:1,
-      name:"React Js"
+      name:"React Js",
+      image:"https://i.ibb.co/fFF4rCs/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
     },
     {
       id:2,
-      name:"JavaScript & ES6"
+      name:"JavaScript & ES6",
+      image:"https://i.ibb.co/JQHMPS5/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
     },
     {
       id:3,
-      name:"MongoDB"
+      name:"MongoDB",
+      image:"https://i.ibb.co/PWt82BS/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
     },
   ]
- const list1 = ['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ];
- const list2 = [];
- const list3 = ['Passing props','Creating Mobile Responsive Components','Using different React hooks for ex:- useState, useEffect, useContext'];
+
+//  const list1 = ['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ];
+//  const list2 = [];
+//  const list3 = ['Passing props','Creating Mobile Responsive Components','Using different React hooks for ex:- useState, useEffect, useContext'];
   return (
     <div className="services" id='Services'>
       <div className="awesome">
@@ -42,8 +49,15 @@ const Services = () => {
         <div className="blur s-blur1" style={{ background: 'rgb(213, 172, 238)' }}>
         </div>
       </div>
-        <div className="skils">
-
+        <div className="skills">
+          {
+          skilldata.map(item=>
+            <Card
+            key={item.id}
+             item ={item}
+            ></Card>
+            )
+          }
         </div>
       {/* <div className="cards">
         <motion.div
