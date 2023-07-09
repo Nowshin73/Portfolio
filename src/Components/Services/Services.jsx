@@ -1,5 +1,10 @@
-import React from 'react'
 import './Services.css'
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
+
 import Card from '../Card/Card'
 import heartemoji from '../../img/heartemoji.png'
 import glasses from '../../img/glasses.png'
@@ -16,7 +21,7 @@ const Services = () => {
     {
       id:1,
       name:"React Js",
-      image:"https://i.ibb.co/fFF4rCs/image.png",
+      image:"https://i.ibb.co/2cBZkGk/image.png",
       des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
     },
     {
@@ -29,6 +34,24 @@ const Services = () => {
       id:3,
       name:"MongoDB",
       image:"https://i.ibb.co/PWt82BS/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
+    },
+    {
+      id:4,
+      name:"PHP",
+      image:"https://i.ibb.co/bL87VBQ/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
+    },
+    {
+      id:5,
+      name:"CSS",
+      image:"https://i.ibb.co/fY7FxS5/image.png",
+      des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
+    },
+    {
+      id:6,
+      name:"Tailwind CSS",
+      image:"https://i.ibb.co/5FfRbCX/image.png",
       des:['Developing responsive websites','Implementing new functionalities using java', 'Handling arrays, objects, ES6 of javascript', 'Storing data on local storage and cookies', 'Fetching different forms of data from json' ]
     },
   ]
@@ -50,14 +73,18 @@ const Services = () => {
         </div>
       </div>
         <div className="skills">
+          <Swiper slidesPerView={3} spaceBetween={20} navigation={true} modules={[Navigation]} className="mySwiper">
           {
           skilldata.map(item=>
-            <Card
+        <SwiperSlide> <Card
             key={item.id}
              item ={item}
-            ></Card>
+            ></Card></SwiperSlide>
+       
+            
             )
           }
+          </Swiper>
         </div>
       {/* <div className="cards">
         <motion.div

@@ -1,7 +1,8 @@
 .services{
 padding: 0 3rem 0 3rem;
 display: flex;
-height: 90vh;
+flex-direction: column;
+gap: 2rem;
 margin-bottom: 13rem;
 margin-top: 9rem;
 
@@ -37,7 +38,10 @@ margin-top: 1rem;
 .cards >*{
     position: absolute;
 }
-
+.skills{
+    display: flex;
+    gap: 2rem;
+}
 @media (max-width: 550px) {
     .services{    
         margin-top: 0;
