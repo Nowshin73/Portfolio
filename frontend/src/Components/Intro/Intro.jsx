@@ -33,23 +33,27 @@ const Intro = () => {
                             500,
                             'Nowshin Nawar', // initially rendered starting point
                             1000,
-                            'a Web Developer',
+                            'a Frontend Developer',
                             1000,
                             'a Mern Stack Developer',
                             1000,
                             'a PHP Developer',
+                            500,
+                            'a Android Developer',
+                            500,
+                            'a Deep Learning Researcher',
                             500,
                         ]}
                         speed={50}
                         style={{ fontSize: '3rem', color:'#FE2EF7', fontWeight:' bold' }}
                         repeat={Infinity}
                     /></span>
-                    <span style={{ color: darkMode ? 'white' : '' }}>Web Developer
+                    <span style={{ color: darkMode ? 'white' : '' }}>Software Engineer
                         producing the Quality work</span>
                 </div>
-                <button className="button i-button">
+                {/* <button className="button i-button">
                     <Link spy={true} to='Contact' smooth={true}>Hire me</Link>
-                </button>
+                </button> */}
                 <div className="i-icons" >
                    <a href="https://github.com/Nowshin73"><BsGithub style={{fontSize: "4rem", color:"#BF00FF"}}></BsGithub></a>
                     <a href="https://www.linkedin.com/in/nowshin-nawar-nibal" download><SiLinkedin style={{fontSize: "4rem", color:"#BF00FF"}}></SiLinkedin></a>
