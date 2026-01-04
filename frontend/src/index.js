@@ -8,6 +8,7 @@ import App from './App';
 import {ThemeProvider} from './Context'
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Login from './pages/login/Login';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     children:[
       {path: "/",
       element: <Home></Home>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
       },
       {path: "/projects",
       element: <Projects></Projects>

@@ -13,7 +13,7 @@ const Portfolio = () => {
   const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio" id='Portfolio'>
-      <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
+      <span style={{ color: darkMode ? 'white' : '' }}> Projects</span>
       <span>Portfolio</span>
       <Swiper
         spaceBetween={2}
