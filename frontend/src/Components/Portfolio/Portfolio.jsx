@@ -24,11 +24,11 @@ const Portfolio = () => {
     <div className="portfolio" id='Portfolio'>
       <span style={{ color: darkMode ? 'white' : '' }}> Projects </span>
       <span>Portfolio</span>
-     
+
       <div className="projects">
         {projects ? projects.map((project, index) => (
           <div className='project'>
-            <h3 style={{ color: darkMode ? 'white' : '' }}>Project Name: {project.title}</h3>
+            <h3 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project Name: {project.title}</h3>
             <a href={project.liveSite} target='_blank'><button className='button'>view live site</button></a>
             <Swiper
               spaceBetween={2}
@@ -42,12 +42,12 @@ const Portfolio = () => {
                   <button className='button2'>{image.title}</button>
                 </SwiperSlide>)}
             </Swiper>
-             <div className="desc">
+            <div className="desc">
               <h2>Project Description</h2>
               <ol>
                 {
-                  project.description.map((desc,index)=>
-                  <li key={index}>{desc}</li>
+                  project.description.map((desc, index) =>
+                    <li key={index}>{desc}</li>
                   )
                 }
               </ol>
@@ -55,27 +55,28 @@ const Portfolio = () => {
           </div>
         )) : <div>No projects found</div>}
       </div>
-       <div className="mbl-projects">
+      <div className="mbl-projects">
         {projects ? projects.map((project, index) => (
           <div className='project'>
-            <h2 style={{ color: darkMode ? 'white' : '' }}>Project {project.title}</h2>
+            <h2 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project {project.title}</h2>
             <a href={project.liveSite} target='_blank'><button className='button'>view live site</button></a>
             <Swiper
               spaceBetween={2}
-              slidesPerView={1.5}
+              slidesPerView={1}
               grabCursor={true}
-               className='mbl-portfolio-slider'
+              className='mbl-portfolio-slider'
             >
               {project.gallery.map((image, index) =>
                 <SwiperSlide key={index}>
-                  <img className='portfolio-img' src={image} alt="" />
+                  <img className='portfolio-img' src={image.url} alt={image.title} />
+                  <button className='button2'>{image.title}</button>
                 </SwiperSlide>)}
             </Swiper>
             <div className="desc">
               <ol>
                 {
-                  project.description.map((desc,index)=>
-                  <li key={index}>{desc}</li>
+                  project.description.map((desc, index) =>
+                    <li key={index}>{desc}</li>
                   )
                 }
               </ol>
@@ -83,7 +84,7 @@ const Portfolio = () => {
           </div>
         )) : <div>No projects found</div>}
       </div>
-   
+
       {/* <Swiper
         spaceBetween={2}
         slidesPerView={1}

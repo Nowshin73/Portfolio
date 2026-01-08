@@ -35,11 +35,14 @@
 }
 
 .project {
+    margin-top: 5rem;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-bottom: 2px solid gray;
+    width: 100vw;
 }
 
 .portfolio-slider {
