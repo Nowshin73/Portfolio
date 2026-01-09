@@ -28,8 +28,11 @@ const Portfolio = () => {
       <div className="projects">
         {projects ? projects.map((project, index) => (
           <div className='project'>
-            <h3 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project Name: {project.title}</h3>
+            <div className="project-title">
+              <h3 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project Name: {project.title}</h3>
             <a href={project.liveSite} target='_blank'><button className='button'>view live site</button></a>
+            
+            </div>
             <Swiper
               spaceBetween={2}
               slidesPerView={1.5}
@@ -58,8 +61,10 @@ const Portfolio = () => {
       <div className="mbl-projects">
         {projects ? projects.map((project, index) => (
           <div className='project'>
-            <h2 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project {project.title}</h2>
+           <div >
+             <h2 style={{ color: darkMode ? 'white' : '' }}> {index + 1}. Project {project.title}</h2>
             <a href={project.liveSite} target='_blank'><button className='button'>view live site</button></a>
+           </div>
             <Swiper
               spaceBetween={2}
               slidesPerView={1}
